@@ -14,9 +14,9 @@ export class DynamicComponent implements OnInit {
   
   title:string = 'I like change color!!!';
 
-  red:any  = 0;
-  green:any = 0;
-  blue:any = 0;
+  red:number  = 0;
+  green:number = 0;
+  blue:number = 0;
 
   htmlRGB() {
     return (`rgb(${this.red},${this.green},${this.blue})`);

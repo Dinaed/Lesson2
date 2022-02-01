@@ -1,0 +1,8 @@
+<div class="container">
+  <input type="range" min="1" max="15" [(ngModel)]="count">
+  <div [ngSwitch]="case()" class="out">
+    <p *ngSwitchCase="1">one</p>
+    <p *ngSwitchCase="2">two</p>
+    <p *ngSwitchCase="3">three</p>
+  </div>
+</div>

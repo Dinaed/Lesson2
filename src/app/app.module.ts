@@ -5,13 +5,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter.component';
 import { DynamicComponent } from './dynamic/dynamic.component';
+import { SwitchComponent } from './switch/switch.component';
 
 
 @NgModule({
-  declarations: [			
+  declarations: [				
     AppComponent,
       CounterComponent,
-      DynamicComponent
+      DynamicComponent,
+      SwitchComponent
    ],
   imports: [
     BrowserModule,
