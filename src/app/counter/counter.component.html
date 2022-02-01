@@ -1,0 +1,9 @@
+<div class="counter">
+  <h2 class="title" [ngStyle]="{'color': colors[counter-1]}" *ngIf="textRender">{{someDynamicText}}</h2>
+  <h2 class="title" [ngStyle]="{'color': colors[9+counter]}" *ngIf="!textRender">{{someDynamicText}}</h2>
+<h2 class="title">Counter:{{counter}}</h2>
+  <div>
+  <button (click)="increment()">Increment</button>
+  <button (click)="decrement()">Decrement</button>
+  </div>
+</div>

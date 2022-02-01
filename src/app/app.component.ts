@@ -6,5 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Lesson2';
+  title:string = 'Hello Angular';
+  inputText:string = 'Text in input';
+
+  circle:boolean = false;
+
+  redCircle:boolean = false;
+
+  taskList:string[] = ['go in work','go in gym','go in shop'];
+  
+  newTask:string = '';
+     
+  addTask(){
+    this.taskList.push(this.newTask);
+  }
+
+  showCircle(){
+    this.circle = !this.circle;
+  }
+  showRedCircle(){
+    this.redCircle = !this.redCircle;
+  }
+
 }
