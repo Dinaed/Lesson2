@@ -1,0 +1,29 @@
+.div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 33px;
+}
+.text {
+  display: flex;
+  & p{
+    margin: 10px;
+    font-size: 24px;
+    color: green;
+    &:first-child{
+      color: red;
+    }
+    &:last-child{
+      color: blue;
+    }
+  }
+}
+.inputs {
+  display: flex;
+  &:input{
+    margin: 10px;
+  }
+}

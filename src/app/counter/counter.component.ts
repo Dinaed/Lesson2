@@ -12,7 +12,7 @@ export class CounterComponent implements OnInit {
 
   ngOnInit() {
   }
-  colors:string[] = ['aqua', 'olive', 'yellow', 'lime', 'teal', 'brown', 'cyan', 'green', 'red'];
+  colors:string[] = ['inherit','aqua', 'olive', 'yellow', 'lime', 'teal', 'brown', 'cyan', 'green', 'red'];
 
   counter:number = 0;
 
