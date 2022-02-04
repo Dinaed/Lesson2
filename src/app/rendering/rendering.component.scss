@@ -1,0 +1,24 @@
+@mixin flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  @include flex-center();
+  flex-direction: column;
+  &__title{
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+  }
+  &__subtitle{
+    text-align: center;
+    font-size: 33px;
+  }
+  &__render{
+    align-items: center;
+  }
+  &__render{
+    flex-direction: column;
+  }
+}

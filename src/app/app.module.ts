@@ -6,14 +6,20 @@ import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter.component';
 import { DynamicComponent } from './dynamic/dynamic.component';
 import { SwitchComponent } from './switch/switch.component';
+import { RenderingComponent } from './rendering/rendering.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { CircleComponent } from './circle/circle.component';
 
 
 @NgModule({
-  declarations: [				
+  declarations: [							
     AppComponent,
       CounterComponent,
       DynamicComponent,
-      SwitchComponent
+      SwitchComponent,
+      RenderingComponent,
+      TasksComponent,
+      CircleComponent
    ],
   imports: [
     BrowserModule,

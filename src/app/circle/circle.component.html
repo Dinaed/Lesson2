@@ -1,0 +1,7 @@
+<div class="div">
+  <h2>Реализация ngClass и ngIf</h2>
+  <button (click)="showRedCircle()" class="circles-btn">Red Circle</button>
+  <div class="circle" [ngClass]="{'red__circle':redCircle}"></div>
+  <button (click)="showCircle()" class="circles-btn">Show Circle</button>
+  <div class="circle red__circle" *ngIf="circle"></div>
+</div>

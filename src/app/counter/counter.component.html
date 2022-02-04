@@ -1,3 +1,4 @@
+<h2>Изменение цвета и содержания строки в зависимости от счетчика</h2>
 <div class="counter">
   <h2 class="title" [ngStyle]="{'color': colors[counter]}" *ngIf="textRender">{{someDynamicText}}</h2>
   <h2 class="title" [ngStyle]="{'color': colors[colors.length+counter]}" *ngIf="!textRender">{{someDynamicText}}</h2>

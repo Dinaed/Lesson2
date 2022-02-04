@@ -1,0 +1,9 @@
+<ol>
+  <li *ngFor="let item of taskList" class="container__list-item">
+    {{item}}
+  </li>
+</ol>
+<div>
+  <input type="text" [(ngModel)]="newTask">
+  <button (click)="addTask()">Add task</button>
+</div>
