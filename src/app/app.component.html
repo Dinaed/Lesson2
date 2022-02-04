@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" >
   <h1 class="container__title">{{title}}</h1>
   <h2 class="container__subtitle">Односторонний и двустронооий рендеренг</h2>
   <div class="container__inputs">
@@ -23,13 +23,20 @@
     <button (click)="showCircle()" class="container__circles-btn">Show Circle</button>
     <div class="circle" *ngIf="circle"></div>
   </div>
-  <div class="container__counter">
-    <app-counter></app-counter>
+  <div class="container__tabs">
+    <button class="container__tabs-btn" (click)="changePage('counter')" [ngClass]="{active: activeCounter}">Counter</button>
+    <button class="container__tabs-btn" (click)="changePage('dynamic')" [ngClass]="{active: activeDynamic}">Dynamic text</button>
+    <button class="container__tabs-btn" (click)="changePage('switch')" [ngClass]="{active: activeSwitch}">Switch Case</button>
   </div>
-  <div class="container__dynamic">
-    <app-dynamic></app-dynamic>
-  </div>
-  <div class="container__switch">
-    <app-switch></app-switch>
+  <div [ngSwitch]="page">
+    <div class="container__counter" *ngSwitchDefault="'counter'">
+      <app-counter></app-counter>
+    </div>
+    <div class="container__dynamic" *ngSwitchCase="'dynamic'">
+      <app-dynamic></app-dynamic>
+    </div>
+    <div class="container__switch" *ngSwitchCase="'switch'">
+      <app-switch></app-switch>
+    </div>
   </div>
 </div>

@@ -35,6 +35,23 @@
       margin:5px 0 5px 0;
     }
   }
+  &__tabs{
+    display: flex;
+    
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    &-btn{
+      border: none;
+      width: 150px;
+      height: 50px;
+      border-radius: 22px 47px 6px 43px / 15px 42px 0px 0px;
+      background-color: #a3a0a0;
+      color: whitesmoke;
+      &:hover{
+        background-color: #818181;
+      }
+    }
+  }
 }
 .circle{
   width: 100px;
@@ -45,4 +62,8 @@
 .red__cirkle{
   border:none;
   background-color: red;
+}
+.active{
+  background-color: whitesmoke;
+  color: #a3a0a0;
 }

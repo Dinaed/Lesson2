@@ -28,4 +28,29 @@ export class AppComponent {
     this.redCircle = !this.redCircle;
   }
 
+  page:string = 'counter';
+  activeCounter:boolean = true;
+  activeDynamic:boolean = false;
+  activeSwitch:boolean = false;
+
+  changePage(pageType:string){
+    if(pageType === 'counter'){
+      this.page = 'counter';
+      this.activeCounter = true;
+      this.activeDynamic = false;
+      this.activeSwitch = false;
+    }
+    else if (pageType === 'dynamic'){
+       this.page = 'dynamic';
+       this.activeCounter = false;
+       this.activeDynamic = true;
+       this.activeSwitch = false;
+    }
+    else {
+      this.page = 'switch';
+      this.activeCounter = false;
+      this.activeDynamic = false;
+      this.activeSwitch = true;
+    }
+  }
 }
