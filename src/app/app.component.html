@@ -24,12 +24,12 @@
     <div class="circle" *ngIf="circle"></div>
   </div>
   <div class="container__tabs">
-    <button class="container__tabs-btn" (click)="changePage('counter')" [ngClass]="{active: activeCounter}">Counter</button>
-    <button class="container__tabs-btn" (click)="changePage('dynamic')" [ngClass]="{active: activeDynamic}">Dynamic text</button>
-    <button class="container__tabs-btn" (click)="changePage('switch')" [ngClass]="{active: activeSwitch}">Switch Case</button>
+    <button class="container__tabs-btn" (click)="page = 'counter'" [ngClass]="{active: page === 'counter'}">Counter</button>
+    <button class="container__tabs-btn" (click)="page = 'dynamic'" [ngClass]="{active: page === 'dynamic'}">Dynamic text</button>
+    <button class="container__tabs-btn" (click)="page = 'switch'" [ngClass]="{active: page === 'switch'}">Switch Case</button>
   </div>
   <div [ngSwitch]="page">
-    <div class="container__counter" *ngSwitchDefault="'counter'">
+    <div class="container__counter" *ngSwitchCase="'counter'">
       <app-counter></app-counter>
     </div>
     <div class="container__dynamic" *ngSwitchCase="'dynamic'">

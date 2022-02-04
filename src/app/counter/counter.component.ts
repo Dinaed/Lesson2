@@ -19,7 +19,7 @@ export class CounterComponent implements OnInit {
   someDynamicText:string = 'Default dynamic text';
   dynamicText:string = 'Some dynamic text';
   anotherDynamicText:string = 'Another some dynamic text';
-  defDymanicTest:string = 'Default dynamic text'
+  defDymanicTest:string = 'Default dynamic text';
   textRender:boolean = true;
 
   increment(){
